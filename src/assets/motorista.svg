@@ -1,0 +1,7 @@
+<svg id="motorcycle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Dibujo simplificado de una moto -->
+  <circle cx="30" cy="70" r="10" fill="black"/>
+  <circle cx="70" cy="70" r="10" fill="black"/>
+  <rect x="25" y="40" width="50" height="20" fill="gray"/>
+  <rect x="40" y="20" width="20" height="20" fill="gray"/>
+</svg>

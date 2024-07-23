@@ -14,14 +14,14 @@
     left: 0;
     right: 0;
     text-align: center;
-    /* Centra la imagen horizontalmente */
+
 }
 
 .motorista-container img {
     height: 270px;
     width: 230px;
     /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-bottom: 0;
+
     /* Asegura que no haya margen inferior */
 }
 </style>

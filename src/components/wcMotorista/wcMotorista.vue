@@ -18,8 +18,8 @@
 }
 
 .motorista-container img {
-    height: 300px;
-    width: 250px;
+    height: 270px;
+    width: 230px;
     /* Ajusta el tamaño de la imagen según sea necesario */
     margin-bottom: 0;
     /* Asegura que no haya margen inferior */

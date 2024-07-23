@@ -17,7 +17,7 @@ export default defineComponent({
     
           gsap.fromTo(motorcycle, 
             { x: startX }, // Comienza desde la derecha fuera de la pantalla
-            { x: endX, duration: 4, repeat: -1, ease: "none" } // Se mueve hacia la izquierda
+            { x: endX, duration: 3, repeat: -1, ease: "none" } // Se mueve hacia la izquierda
           );
         });
       }

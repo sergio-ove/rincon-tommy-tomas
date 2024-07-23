@@ -1,24 +1,27 @@
 <template>
 
-    <div class="w-100">
-        <img src="/src/assets/motoristaAnimado.png" id="motorcycle" alt="Animated Motorcycle">
+    <div class="motorista-container">
+        <img src="/src/assets/tommyMotero.png" id="motorcycle" alt="Animated Motorcycle">
     </div>
 
 </template>
 <script src="./wcMotorista.js"></script>
 
 <style scoped>
-#motorcycle {
+.motorista-container {
     position: absolute;
-    bottom: 15px;
-    /* Ajusta la posición según sea necesario */
-    will-change: transform;
-    /* Sugerencia al navegador para optimizar el rendimiento */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* Centra la imagen horizontalmente */
 }
 
-
-img {
-    height: 80px;
-    width: 80px;
+.motorista-container img {
+    height: 300px;
+    width: 250px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-bottom: 0;
+    /* Asegura que no haya margen inferior */
 }
 </style>

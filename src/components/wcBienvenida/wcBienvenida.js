@@ -1,24 +1,20 @@
-import { defineComponent } from 'vue';
-import wcMusica from '../wcMusica/wcMusica.vue';
-
+import { defineComponent, onMounted } from 'vue';
+import musicFile from '../../assets/sonidos/motor.wav'
 
 export default defineComponent({
     name: 'wcBienvenida',
-    components: {
-        'wcMusica': wcMusica,
-    },
-
     data() {
-        return {
-        
-        };
-    },
-    
-    mounted() {
-     
+      return {
+        musicSrc: musicFile
+      };
     },
     methods: {
-
-      
+        pagSeccion(evento) {
+            this.$router.push({ name: evento, params: { evento } });
+        }
+    },
+    onMounted() {
+      // Inicia la música al montar el componente
+      this.startMusic();
     }
-});
+  });

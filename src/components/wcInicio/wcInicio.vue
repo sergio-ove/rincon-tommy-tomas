@@ -10,6 +10,7 @@
       <button @click="pagBienvenida" class="hover:bg-blue-400 bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Acceder</button>
     </div>
     <motorista-svg></motorista-svg>
+ 
   </div>
 </template>
 <script src="./wcInicio.js"></script>

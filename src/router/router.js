@@ -2,10 +2,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import wcInicio from '../components/wcInicio/wcInicio.vue';
 import wcBienvenida from '../components/wcBienvenida/wcBienvenida.vue';
+import wcAmigos from '../components/wcAmigos/wcAmigos.vue';
 
 const routes = [
-  { path: '/', component: wcInicio },
-  { path: '/bienvenida', component: wcBienvenida }
+  { path: '/', name: 'inicio', component: wcInicio },
+  { path: '/bienvenida', name: 'bienvenida', component: wcBienvenida },
+  { path: '/amigos', name: 'amigos', component: wcAmigos }
 ];
 
 const router = createRouter({

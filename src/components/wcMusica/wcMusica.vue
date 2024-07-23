@@ -1,10 +1,13 @@
 <template>
-    <div class="music-player">
-        <audio ref="audio" :src="musicSrc" @ended="onMusicEnd"></audio>
-        <button @click="playMusic" class="play-button">Play</button>
-        <button @click="pauseMusic" class="pause-button">Pause</button>
+    <div>
+      <!-- Elemento de audio con reproducción automática y en bucle -->
+      <audio ref="audio" loop autoplay>
+        <!-- Asegúrate de actualizar la ruta al archivo de música correcto -->
+        <source :src="musicSrc" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
-</template>
+  </template>
 <script src="./wcMusica.js"></script>
 
 <style scoped>

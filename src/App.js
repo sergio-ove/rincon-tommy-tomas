@@ -1,17 +1,13 @@
 import { defineComponent } from 'vue';
-import wcBienvenida from './components/wcBienvenida/wcBienvenida.vue';
+import wcMusica from './components/wcMusica/wcMusica.vue';
 
-import wcMotorista from './components/wcMotorista/wcMotorista.vue';
-import wcInicio from './components/wcInicio/wcInicio.vue';
 
 
 
 export default defineComponent({
     name: 'App',
     components: {
-    'wcBienvenida': wcBienvenida,
-    'wcMotorista': wcMotorista,
-    'wcInicio':wcInicio
+        'wcMusica': wcMusica,
     },
 
     data() {

@@ -2,9 +2,9 @@
     <div>
       <!-- Elemento de audio con reproducción automática y en bucle -->
       <audio ref="audio" loop autoplay>
-        <!-- Asegúrate de actualizar la ruta al archivo de música correcto -->
-        <source :src="musicSrc" type="audio/mpeg" />
-        Your browser does not support the audio element.
+
+        <source :src="musicSrc" type="audio/wav" />
+   
       </audio>
     </div>
   </template>

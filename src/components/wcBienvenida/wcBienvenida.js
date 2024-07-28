@@ -14,7 +14,7 @@ export default defineComponent({
         }
     },
     onMounted() {
-      // Inicia la música al montar el componente
+
       this.startMusic();
     }
   });

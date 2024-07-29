@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue';
-import musicFile from '../../assets/sonidos/granja.wav'
+import musicFile from '../../assets/sonidos/tecno.mp3'
 // import musicFile from '@/assets/musica.mp3'
 
 export default defineComponent({

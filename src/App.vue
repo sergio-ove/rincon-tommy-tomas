@@ -1,5 +1,5 @@
 <template>
-    <wcMusica></wcMusica>
+
     <router-view>
 
     </router-view> <!-- Aquí se renderizarán las rutas -->

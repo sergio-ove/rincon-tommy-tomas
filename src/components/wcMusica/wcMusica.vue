@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- Elemento de audio con reproducción automática y en bucle -->
-      <audio ref="audio" loop autoplay>
+      <audio ref="audio" loop>
 
         <source :src="musicSrc" type="audio/wav" />
    

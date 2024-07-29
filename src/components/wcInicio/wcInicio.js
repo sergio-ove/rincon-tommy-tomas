@@ -1,28 +1,42 @@
 import { defineComponent } from 'vue';
 import wcMotorista from '../wcMotorista/wcMotorista.vue';
-import wcMusica from '../wcMusica/wcMusica.vue';
+import musicFile from '../../assets/sonidos/tecno.mp3'
 
 export default defineComponent({
     name: 'App',
     components: {
-        'wcMotorista': wcMotorista,
-        'wcMusica': wcMusica,
-
+      'wcMotorista': wcMotorista,
     },
-
     data() {
-        return {
-
-        };
-    },
-
-    mounted() {
-
+      return {
+        musicSrc: musicFile,
+      };
     },
     methods: {
-        pagBienvenida() {
-            this.$router.push('/bienvenida');
+      pagBienvenida() {
+        this.$router.push('/bienvenida');
+      },
+      playMedia() {
+        const audio = this.$refs.audio;
+        const video = document.getElementById('videoElement');
+        if (audio) {
+          audio.play();
         }
-
-    }
-});
+        if (video) {
+          video.play();
+        }
+      },
+      stopMedia() {
+        const audio = this.$refs.audio;
+        const video = document.getElementById('videoElement');
+        if (audio) {
+          audio.pause();
+          audio.currentTime = 0;
+        }
+        if (video) {
+          video.pause();
+          video.currentTime = 0;
+        }
+      },
+    },
+  });

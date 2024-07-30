@@ -1,14 +1,21 @@
 <template>
   <div
     class="flex flex-col justify-center items-center h-screen bg-gradient-to-br from-indigo-500 to-indigo-800 overflow-hidden relative">
-    <div class="font-semibold text-center rounded-3xl border-double border-4 shadow-lg p-10 max-w-xs contenedor bg-red-500">
-      <div>
+    <wcMotorista></wcMotorista>
+    <!-- <div
+      class="font-semibold text-center rounded-3xl border-double border-4 shadow-lg p-10 max-w-xs contenedor bg-red-500"> -->
+      <!-- <div>
         <video id="videoElement" src="/src/assets/sonidos/dj.mp4" loop muted class="rounded full"></video>
+      </div> -->
+      <div class="divVideo flex justify-center">
+        <iframe width="300" height="315" src="https://www.youtube.com/embed/ViRUaVU9Fzc?si=fFzCdujcgdoh8Lnp"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="mx-auto"></iframe>
       </div>
       <button @click="pagBienvenida"
         class="hover:bg-blue-400 bg-indigo-800 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Acceder</button>
-    </div>
-
+        
     <div class="player-controls flex justify-center items-center space-x-4">
       <!-- Botón de Play -->
       <div @click="playMedia" class="control-button play-button">
@@ -20,6 +27,9 @@
         <img src="/src/assets/stop.png" alt="Stop" class="icon" />
       </div>
     </div>
+    </div>
+
+
 
     <div>
       <!-- Elemento de audio -->
@@ -27,15 +37,15 @@
         <source :src="musicSrc" type="audio/mp3" />
       </audio>
     </div>
-  </div>
-
+  <!-- </div> -->
 </template>
+
 
 <script src="./wcInicio.js"></script>
 
 <style scoped>
 video {
-  height: 280px;
+  height: 400px;
 
 }
 
@@ -75,5 +85,7 @@ video {
   /* Color rojo para el botón de stop */
 }
 
-
+.divVideo{
+  width: 350px;
+}
 </style>

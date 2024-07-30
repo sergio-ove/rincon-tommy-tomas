@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue';
 import wcMotorista from '../wcMotorista/wcMotorista.vue';
-import musicFile from '../../assets/sonidos/tecno.mp3'
+import musicFile from '../../assets/sonidos/happy.mp3'
 
 export default defineComponent({
     name: 'App',
